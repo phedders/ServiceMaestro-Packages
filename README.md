@@ -6,7 +6,10 @@ Static APT and DNF repositories for [Service Maestro](https://github.com/phedder
 - APT repository: https://phedders.github.io/ServiceMaestro-Packages/apt/
 - DNF repository: https://phedders.github.io/ServiceMaestro-Packages/rpm/
 
-The Pages workflow downloads the latest public Service Maestro release assets and builds:
+The `gh-pages` branch is the published site. The
+[`Publish package repositories`](https://github.com/phedders/ServiceMaestro/blob/main/.github/workflows/packages-pages.yml)
+workflow in the main Service Maestro repository downloads the latest public
+release assets and builds:
 
 - a flat APT repository containing the CLI and server `.deb` packages;
 - a `createrepo_c` RPM repository containing the server x86_64 package;
@@ -15,10 +18,12 @@ The Pages workflow downloads the latest public Service Maestro release assets an
 
 ## Updating
 
-The workflow runs on a daily schedule, on pushes to `main`, and can be started manually with **Actions → Build package repositories → Run workflow**. An optional release tag can be supplied; leaving it blank uses the latest release.
+The workflow runs automatically after a successful **Release packages** run and can
+also be started manually. An optional release tag can be supplied; leaving it blank
+uses the latest release.
 
 ```sh
-gh workflow run pages.yml --repo phedders/ServiceMaestro-Packages
+gh workflow run packages-pages.yml --repo phedders/ServiceMaestro
 ```
 
 ## Local build
@@ -32,7 +37,7 @@ gh release download --repo phedders/ServiceMaestro --dir downloads \
 ./scripts/build-site.sh v0.2.0
 ```
 
-The generated `site/` directory is not committed; GitHub Pages deploys it as an artifact.
+The generated `site/` directory is not committed; it is published to the `gh-pages` branch by the workflow.
 
 ## Signing
 
