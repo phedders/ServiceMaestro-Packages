@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Service Maestro packages</title>
+    <link rel="icon" type="image/svg+xml" href="https://phedders.github.io/ServiceMaestro/icon.svg" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #07111a;
+        --panel: #0d1a26;
+        --panel-2: #102232;
+        --border: #1d3548;
+        --text: #e8f3fb;
+        --muted: #92a9ba;
+        --accent: #63c7ff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: radial-gradient(circle at 20% 0%, #123047 0, var(--bg) 55%);
+        color: var(--text);
+        font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+      main { width: min(960px, 92vw); margin: 0 auto; padding: 48px 0 72px; }
+      h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: -0.03em; }
+      h2 { margin: 0 0 6px; font-size: 1.35rem; }
+      p { margin: 0 0 12px; }
+      a { color: var(--accent); }
+      code, pre { font-family: "JetBrains Mono", "Fira Code", ui-monospace, monospace; }
+      code { background: rgba(255, 255, 255, 0.07); border-radius: 4px; padding: 1px 5px; }
+      pre {
+        margin: 12px 0 0;
+        padding: 14px 16px;
+        overflow-x: auto;
+        background: #050d14;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        font-size: 0.86rem;
+        line-height: 1.55;
+      }
+      .lede { color: var(--muted); font-size: 1.05rem; }
+      .meta { color: var(--muted); font-size: 0.88rem; margin-bottom: 28px; }
+      .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+      section {
+        background: linear-gradient(180deg, var(--panel-2), var(--panel));
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 20px;
+      }
+      .wide { grid-column: 1 / -1; }
+      ul { margin: 8px 0 0; padding-left: 20px; }
+      li { margin: 3px 0; }
+      .muted { color: var(--muted); }
+      .note {
+        margin-top: 18px;
+        padding: 12px 14px;
+        border-left: 3px solid #f4b860;
+        background: rgba(244, 184, 96, 0.08);
+        color: #f6d29a;
+        border-radius: 6px;
+      }
+      .badge {
+        display: inline-block;
+        padding: 2px 8px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Service Maestro packages</h1>
+      <p class="lede">APT and DNF package repositories for Service Maestro, built from the latest GitHub release.</p>
+      <p class="meta">Release <span class="badge">v0.2.0</span> · generated 2026-11-21 16:48 UTC</p>
+
+      <div class="grid">
+        <section>
+          <h2>Debian / Ubuntu</h2>
+          <p class="muted">Server and CLI packages for amd64.</p>
+          <pre>echo "deb [trusted=yes] https://phedders.github.io/ServiceMaestro-Packages/apt ./" | sudo tee /etc/apt/sources.list.d/service-maestro.list
+sudo apt update
+sudo apt install service-maestro-server
+# optional command-line client
+sudo apt install service-maestro-cli</pre>
+        </section>
+
+        <section>
+          <h2>Fedora / RHEL / Rocky</h2>
+          <p class="muted">Server package for x86_64.</p>
+          <pre>sudo tee /etc/yum.repos.d/service-maestro.repo &gt;/dev/null &lt;&lt;'EOF'
+[service-maestro]
+name=Service Maestro
+baseurl=https://phedders.github.io/ServiceMaestro-Packages/rpm/
+enabled=1
+gpgcheck=0
+EOF
+sudo dnf install service-maestro-server</pre>
+        </section>
+
+        <section class="wide">
+          <h2>Direct downloads</h2>
+          <p class="muted">Download a package directly, or compare it with <a href="SHA256SUMS">SHA256SUMS</a>.</p>
+          <div class="grid">
+            <div>
+              <h2>Debian packages</h2>
+              <ul>
+                <li><a href="apt/service-maestro-cli_0.2.0_all.deb">service-maestro-cli_0.2.0_all.deb</a></li>
+<li><a href="apt/service-maestro-server_0.2.0_amd64.deb">service-maestro-server_0.2.0_amd64.deb</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2>RPM packages</h2>
+              <ul>
+                <li><a href="rpm/service-maestro-server-0.2.0-1.x86_64.rpm">service-maestro-server-0.2.0-1.x86_64.rpm</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="wide">
+          <h2>About</h2>
+          <p>
+            Packages are rebuilt from the latest public
+            <a href="https://github.com/phedders/ServiceMaestro/releases">Service Maestro release</a>.
+            Source RPMs, desktop builds and other release assets remain on the release page.
+          </p>
+          <p class="muted">
+            These repositories are currently unsigned. The APT command uses <code>[trusted=yes]</code> and the
+            DNF repository uses <code>gpgcheck=0</code>. If you need signature verification, download the release
+            assets directly and verify them against the release checksums.
+          </p>
+          <p class="muted">Repository source and build workflow:
+            <a href="https://github.com/phedders/ServiceMaestro-Packages">phedders/ServiceMaestro-Packages</a>.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

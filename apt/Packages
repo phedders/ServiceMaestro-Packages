@@ -1,0 +1,38 @@
+Package: service-maestro-cli
+Version: 0.2.0
+Architecture: all
+Maintainer: Service Maestro <phedders@users.noreply.github.com>
+Installed-Size: 56
+Depends: python3 (>= 3.8)
+Filename: ./service-maestro-cli_0.2.0_all.deb
+Size: 14976
+MD5sum: e4a4acea918c5bf7acbbd3f42605885b
+SHA1: b73c752cbd2227c8d0f98718d7310beb1e97c42a
+SHA256: 835dd05a655e242a25db258a62d542d811b82c0122b3f2bff790157ecaf5451d
+Section: utils
+Priority: optional
+Description: command-line client for Service Maestro
+ Control live transport, inspect the live queue, manage set lists, call any
+ Service Maestro HTTP API endpoint and run an interactive keyboard transport
+ from a terminal. The client uses only the Python standard library.
+
+Package: service-maestro-server
+Version: 0.2.0
+Architecture: amd64
+Maintainer: Service Maestro <phedders@users.noreply.github.com>
+Installed-Size: 223547
+Depends: adduser, ca-certificates, git, openssl, systemd
+Recommends: git-lfs, openssh-client
+Filename: ./service-maestro-server_0.2.0_amd64.deb
+Size: 47280560
+MD5sum: 20bf122c9dba612905ee613b324a063e
+SHA1: 1557dea1b2c03c3182a5698dfdd7bbaecc0e2fdd
+SHA256: f8df25daeeb01eda4d2299b8f8bd3ce31b5d5df9aba575eefd7572b27b480326
+Section: web
+Priority: optional
+Description: self-hosted church service presentation server
+ Service Maestro manages songs, set lists, Bible passages, media, displays and
+ live service control. This package bundles its Node.js runtime and installs a
+ systemd service with a local HTTPS certificate, data directories and first-run
+ administrator credentials.
+

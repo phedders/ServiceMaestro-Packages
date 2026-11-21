@@ -1,0 +1,23 @@
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Sat, 21 Nov 2026 16:48:31 +0000
+Label: Service Maestro
+Origin: Service Maestro
+Suite: stable
+MD5Sum:
+ 1eca1468f529e0e94eb6b27012f15944             1532 Packages
+ 306ed5ed85afc201f2a6cfcf10aac930              843 Packages.gz
+ 76b7846faa835d04c95226c8c56f591c              154 Release
+SHA1:
+ d1901bebbf847903c4995e72e7a067560416e597             1532 Packages
+ ed7136b4eadeb406e2ae142785e5c6b3f6636d36              843 Packages.gz
+ 253e13f48487b74a9bbe921ad794c3c6fc4458df              154 Release
+SHA256:
+ 6f07681122d4f137a9813018d86073539779af7ef36625dbfd819c96bec4f809             1532 Packages
+ 876d7faa74027fff046b1b08d216cffd74eb49daec4e7b5f7b598d6e50b71da1              843 Packages.gz
+ 5003f870a2f1993fc990df574f386f7c48478b9b86db9b2151570f0c6c217d7a              154 Release
+SHA512:
+ a47aff20c75fdcb6728c95441f28f9386b23d2c827ec3a39597e9e7501dd6db9441fce057ebc22f134d55e2a502bc67b3326126be562922ec92a2852558f87c4             1532 Packages
+ e48ec081d2b66fb4af76732026ab1dff69d2655ce446975a71d828ee787f1230acf1176d55a32e48ef5c7d82138d1e48e784f17fcd74905436d6b1e004850604              843 Packages.gz
+ fc9c1df2da6d21213652084a9ec574106bb4dd8e93e34791277a87cd3b35d3977be712c3c77e5617fac4416ff33740c517132a857928e4f3e9a4c8ea9317d649              154 Release
