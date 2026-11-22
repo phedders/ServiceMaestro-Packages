@@ -1,14 +1,14 @@
 Package: service-maestro-cli
-Version: 0.2.0
+Version: 0.3.0
 Architecture: all
 Maintainer: Service Maestro <phedders@users.noreply.github.com>
 Installed-Size: 92
 Depends: python3 (>= 3.8)
-Filename: ./service-maestro-cli_0.2.0_all.deb
-Size: 15250
-MD5sum: bfa30705eb64a54ba17fe851b9a618b3
-SHA1: 973490fdf659df0687894347d0b6fb82da030bcb
-SHA256: 16afc015e02ced1e7b63d9d85ee8fc76c5b69fed6ba98b6bb2e32b507835d3b8
+Filename: ./service-maestro-cli_0.3.0_all.deb
+Size: 15290
+MD5sum: b067d1ae8d53b38bb34dc04ac8d712f2
+SHA1: 722309870d3bd9e28f940392b88b02c9a2ab33d2
+SHA256: e52cdd6605ca8a70fdf9b50f6aa3462da60752370aad247cff3d05f753ef5d43
 Section: utils
 Priority: optional
 Description: command-line client for Service Maestro
@@ -17,17 +17,17 @@ Description: command-line client for Service Maestro
  from a terminal. The client uses only the Python standard library.
 
 Package: service-maestro-server
-Version: 0.2.0
+Version: 0.3.0
 Architecture: amd64
 Maintainer: Service Maestro <phedders@users.noreply.github.com>
-Installed-Size: 223569
+Installed-Size: 223774
 Depends: adduser, ca-certificates, git, openssl, systemd
 Recommends: git-lfs, openssh-client
-Filename: ./service-maestro-server_0.2.0_amd64.deb
-Size: 50428618
-MD5sum: 1b1d9847b55c28eb94563247f4a05e0e
-SHA1: ea79f4eef383f02a375186c3186a6fe9c8484c45
-SHA256: d0653c19551c7c0b8bb885b394fa7ad566d3be84567622094e5b3b71911978ae
+Filename: ./service-maestro-server_0.3.0_amd64.deb
+Size: 50463220
+MD5sum: a0939a9dad20f35051a26c30d9923a2c
+SHA1: ce3b5a1925e92bae2f61527a6706a7ce6ab693f5
+SHA256: 1b8259b2d0b37f39deabf5f9de2668bcbcf4a552b653d38cfa2161495dfe92fd
 Section: web
 Priority: optional
 Description: self-hosted church service presentation server

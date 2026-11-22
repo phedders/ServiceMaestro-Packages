@@ -1,23 +1,23 @@
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Sat, 21 Nov 2026 19:07:03 +0000
+Date: Sun, 22 Nov 2026 23:48:38 +0000
 Label: Service Maestro
 Origin: Service Maestro
 Suite: stable
 MD5Sum:
- 4bc579e9d0a5820f68da3ad5a03099bb             1532 Packages
- 5ecc9ffe4dd6fa9b1400888536ce474b              845 Packages.gz
- 3768df0e3f4b7884e7b84a84e4a12483              154 Release
+ 55be331789650733db6a886bc3439dcb             1532 Packages
+ 6bfe450961f5bbf58a2768f705f47228              843 Packages.gz
+ 03f1417ccc85eab3622538503f5cec50              154 Release
 SHA1:
- a1fd6f314591a5cd54ed4e0fbe2e1946c3a6224c             1532 Packages
- 39268a9bb32bef3fc418e3cebc4f54c79e88ba8c              845 Packages.gz
- 16816b321e7f84bb3d7b96c132dc757898edde8b              154 Release
+ b3cf9c1be55a4381b153efd9f575d9a08f590a13             1532 Packages
+ 44443e5af2eff262dde07414e7f4a4df3f29485b              843 Packages.gz
+ 314788e7f40eabb510001cd63a4cfdca75111428              154 Release
 SHA256:
- 373ecbad028b97b47e510351c73c1be44a546879047390a4d456f10931fdd5e9             1532 Packages
- d39b989c535d92b698c064c264839cfcbc28b5362ad3a859df8abf845966f027              845 Packages.gz
- a9ea8e1bf9685fdb33ad31c203a5782464de546cd4da4a1127e98b530b74ffb3              154 Release
+ a21245a3a8456ed5bf44429395dde5794d89662cfdf173d37442fc3afce88094             1532 Packages
+ e6caa8777e318c8c17d768daf60c9232144c89f77469c0694ddc016d87590dd2              843 Packages.gz
+ 5968484c982341fb37423c1828b8663eb8df6cd438563666176a8b91b2492a58              154 Release
 SHA512:
- 2e270ab14b88a78ac43cabda83dbaf113b86716ed773df9a661181cbec47af8fc859bbf6c0fd11a0752b9e511ed919abe39f1784284e6cfcac061f48ce4c8251             1532 Packages
- e7ea692b03a58b711bb074457713a232769e7b953766632d76dcd46aca0efc43049d896a37c99b6f18b1d88d53a9e113eb76b9b83137b47b655841920a3bc6c7              845 Packages.gz
- f3bd537b0772e5e24c96ef8a62581f32788f5937ac27e4fcb1a36dd5a5ae2f0a111f776f02d395708f6af8710f3db24221ba2d5dc6b543f916b480906a75795b              154 Release
+ 4f27faf1c18fc5df16636e13b71bedd189142d27f7dfa02a0237af23e788dcb552669816f652391f5af0d09bb4b329f2738d2cd752f32662739b19fb21a521c4             1532 Packages
+ c57762eb73e764171ded53c508abffb268e51d3d54a9f92451bbbf10cf6372d0a87075a4d4c03934d29dfed775f9c2b38116e0c75727e560354fdfcbdec39315              843 Packages.gz
+ e53a06bf481689460c20c9bcbeaa6e483dc6836be63c361cf40c38b65e2eea6539eba9266a1e6114c4ffc515acb3a21955a3ebd2f59e3822741d6c3828446ab4              154 Release
